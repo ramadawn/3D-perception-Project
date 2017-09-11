@@ -30,10 +30,8 @@ output: html_document
   Exercise 3 involved implementing the compute_colour_histograms and the compute_normal_histograms. The ranges set for these histograms was [0,256] and [-1,1] for the normals. After some experimentations, I settled on a value of 32 for the bins. 
   Training the model involved using the capture_features script from exercise 3. experimenting with the number of iterations I settled on 800 iteration, More iterations, while more accurate, decreased performance too much in exchange for too little gain in accuracy. With 800 iteration I achieved a model accuracy of 0.9. Once identified, these models were then published Rviz
 
-  
-```{r echo=FALSE, out.width='100%'}
-knitr::include_graphics('figure1.PNG')
-```
+![Normalized Confusion Matrix](figure1.PNG)  
+
 ### Setup
 
 ##  For all three tabletop setups, perform object recognition, then read in respective pick list. Next construct the messages that would comprise a valid request output them to yaml format. 
@@ -50,15 +48,9 @@ knitr::include_graphics('figure1.PNG')
   In conclusion, with no consistent pattern as which object was misclassified, the only was I can think of to improve accuracy to to run more iterations with the capture features part. Given how more and more processing is required for less and less accuracy gain, this seems like a poor solution.
 
   
-```{r echo=FALSE, out.width='100%'}
-knitr::include_graphics('figure2.PNG')
-```
+![World 1](figure2.PNG)  
 
-```{r echo=FALSE, out.width='100%'}
-knitr::include_graphics('figure3.PNG')
-```
+![World 2](figure3.PNG) 
 
-```{r echo=FALSE, out.width='100%'}
-knitr::include_graphics('figure4.PNG')
-```
+![World 3](figure4.PNG) 
   
